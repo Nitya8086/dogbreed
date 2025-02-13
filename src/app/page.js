@@ -49,8 +49,8 @@ export default function Home() {
           </button>
         </div>
       </header>
-      <div className="flex px-20 justify-between">
-        <section className="text-center py-20">
+      <div className="flex justify-center gap-56">
+        <section className="text-center py-20 ">
           <h2 className="text-6xl font-bold text-yellow-500">
             {userCount.toLocaleString()} {/* Format the number with commas */}
           </h2>
@@ -67,11 +67,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="max-w-2xl mx-auto mt-10 w-full max-h-[400px]border">
+        <section className="max-w-2xl  mt-10 w-full max-h-[400px]  ">
           <h2 className="text-lg font-semibold mb-2">
             Dog Breeds ({totalBreeds} breeds)
           </h2>
-          <div className="bg-gray-900 p-6 rounded-lg w-full h-[400px] overflow-y-scroll custom-scrollbar">
+          <div className="bg-gray-900 p-6 rounded-lg w-full h-[400px] overflow-y-scroll scrollbar scrollbar-thumb-sky-700 scrollbar-track-sky-300 h-32 overflow-y-scroll">
             {loading ? (
               <p>Loading...</p>
             ) : (
